@@ -1,0 +1,16 @@
+git add --all
+git commit -m ""
+git push
+
+git init .
+git clone url
+git remote add origin url
+git status
+touch file
+ls -a
+pwd: current directory
+~: home directory
+**remember tab completion
+open .
+drag folder name
+look for .git using ls -a to see if folder is connected to git
