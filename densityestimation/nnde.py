@@ -1,11 +1,12 @@
 def nnde(sample):
      """Plots a nearest-neighbor density estimator, nnde, based on a user specified k.
     
-    Plots a nnde of a given sample with a user specified k, after checking
-    if the sample is valid.
+    Plots a nnde, a density estimator smoothed by averaging distances away from k, of a 
+    given sample with a user specified k, after checking if the sample is valid.
     
     ARGS:
-        sample: data desired to create a nnde for
+        sample: data desired to create a nnde for, entered as a one-dimensional numpy array
+        	k: any real number
         
     RETURNS:
         A nnde plot is returned based on the sample given, the chosen k.

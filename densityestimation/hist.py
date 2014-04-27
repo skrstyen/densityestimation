@@ -1,11 +1,14 @@
 def hist(sample):
     """Plots a histogram based on a user specified origin and bandwidth.
     
-    Plots a histogram of a given sample with a user specified origin and bandwidth, after checking
-    if the sample is valid.
+    Plots a histogram, a jagged density estimator, of a given sample with a user specified
+    origin and bandwidth, after checking if the sample is valid.
     
     ARGS:
-        sample: data desired to create a histogram for
+        sample: data desired to create a histogram for, entered as a one-dimensional numpy
+        array
+        	origin: any real number
+        	bandwidth: any number greater than 0
         
     RETURNS:
         A histogram plot is returned based on the sample given, the chosen origin and the specified

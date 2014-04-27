@@ -1,15 +1,18 @@
 def kde(sample):
-    """Plots a kernel density estimator, kde, based on a user specified kernel and bandwidth.
+    """Plots a kernel density estimator, kde, based on a user specified kernel and 
+    bandwidth.
     
-    Plots a kde of a given sample with a user specified kernel and bandwidth, after checking
-    if the sample is valid.
+    Plots a kde, a denisty estimator smoothed with the use of a kernel, of a given sample 
+    with a user specified kernel and bandwidth, after checking if the sample is valid.
     
     ARGS:
-        sample: data desired to create a kde for
+        sample: data desired to create a kde for, entered as a one-dimensional numpy array
+        	bandwidth: any number greater than 0
+        	kernel: Gaussian (Normal), uniform, triangular, Epanechnikov
         
     RETURNS:
-        A kde plot is returned based on the sample given, the type of kde desired and the specified
-        bandwidth.
+        A kde plot is returned based on the sample given, the type of kde desired and the 
+        specified bandwidth.
     """
     import numpy as np
     import matplotlib.pyplot as plt

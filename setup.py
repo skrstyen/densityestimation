@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
 	name='densityestimation',
-	version='0.1.1',
+	version='0.1.2',
 	authors=['B. Aldous, S. Krstyen'],
 	author_emails=['benaldous@yahoo.com, sarah.krstyen@gmail.com'],
 	package='densityestimation',
