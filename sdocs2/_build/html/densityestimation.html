@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>densityestimation package &mdash; densityestimation  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="densityestimation  documentation" href="index.html" />
+    <link rel="prev" title="Welcome to densityestimation’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to densityestimation’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">densityestimation  documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="densityestimation-package">
+<h1>densityestimation package<a class="headerlink" href="#densityestimation-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-densityestimation.hist">
+<span id="densityestimation-hist-module"></span><h2>densityestimation.hist module<a class="headerlink" href="#module-densityestimation.hist" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="densityestimation.hist.hist">
+<tt class="descclassname">densityestimation.hist.</tt><tt class="descname">hist</tt><big>(</big><em>sample</em><big>)</big><a class="reference internal" href="_modules/densityestimation/hist.html#hist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#densityestimation.hist.hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a histogram based on a user specified origin and bandwidth.</p>
+<p>Plots a histogram, a jagged density estimator, of a given sample with a user specified
+origin and bandwidth, after checking if the sample is valid.</p>
+<dl class="docutils">
+<dt>ARGS:</dt>
+<dd><p class="first">sample: data desired to create a histogram for, entered as a one-dimensional numpy
+array</p>
+<blockquote class="last">
+<div>origin: any real number
+bandwidth: any number greater than 0</div></blockquote>
+</dd>
+<dt>RETURNS:</dt>
+<dd>A histogram plot is returned based on the sample given, the chosen origin and the specified
+bandwidth.</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-densityestimation.kde">
+<span id="densityestimation-kde-module"></span><h2>densityestimation.kde module<a class="headerlink" href="#module-densityestimation.kde" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="densityestimation.kde.kde">
+<tt class="descclassname">densityestimation.kde.</tt><tt class="descname">kde</tt><big>(</big><em>sample</em><big>)</big><a class="reference internal" href="_modules/densityestimation/kde.html#kde"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#densityestimation.kde.kde" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a kernel density estimator, kde, based on a user specified kernel and 
+bandwidth.</p>
+<p>Plots a kde, a denisty estimator smoothed with the use of a kernel, of a given sample 
+with a user specified kernel and bandwidth, after checking if the sample is valid.</p>
+<dl class="docutils">
+<dt>ARGS:</dt>
+<dd><dl class="first last docutils">
+<dt>sample: data desired to create a kde for, entered as a one-dimensional numpy array</dt>
+<dd>bandwidth: any number greater than 0
+kernel: Gaussian (Normal), uniform, triangular, Epanechnikov</dd>
+</dl>
+</dd>
+<dt>RETURNS:</dt>
+<dd>A kde plot is returned based on the sample given, the type of kde desired and the 
+specified bandwidth.</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-densityestimation.nnde">
+<span id="densityestimation-nnde-module"></span><h2>densityestimation.nnde module<a class="headerlink" href="#module-densityestimation.nnde" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="densityestimation.nnde.nnde">
+<tt class="descclassname">densityestimation.nnde.</tt><tt class="descname">nnde</tt><big>(</big><em>sample</em><big>)</big><a class="reference internal" href="_modules/densityestimation/nnde.html#nnde"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#densityestimation.nnde.nnde" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a nearest-neighbor density estimator, nnde, based on a user specified k.</p>
+<p>Plots a nnde, a density estimator smoothed by averaging distances away from k, of a 
+given sample with a user specified k, after checking if the sample is valid.</p>
+<dl class="docutils">
+<dt>ARGS:</dt>
+<dd><dl class="first last docutils">
+<dt>sample: data desired to create a nnde for, entered as a one-dimensional numpy array</dt>
+<dd>k: any real number</dd>
+</dl>
+</dd>
+<dt>RETURNS:</dt>
+<dd>A nnde plot is returned based on the sample given, the chosen k.</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-densityestimation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-densityestimation" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">densityestimation package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-densityestimation.hist">densityestimation.hist module</a></li>
+<li><a class="reference internal" href="#module-densityestimation.kde">densityestimation.kde module</a></li>
+<li><a class="reference internal" href="#module-densityestimation.nnde">densityestimation.nnde module</a></li>
+<li><a class="reference internal" href="#module-densityestimation">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to densityestimation&#8217;s documentation!</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/densityestimation.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to densityestimation’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">densityestimation  documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, SK.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
