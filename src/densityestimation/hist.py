@@ -7,8 +7,8 @@ def hist(sample):
     ARGS:
         sample: data desired to create a histogram for, entered as a one-dimensional numpy
         array
-        	origin: any real number
-        	bandwidth: any number greater than 0
+            origin: any real number
+            bandwidth: any number greater than 0
         
     RETURNS:
         A histogram plot is returned based on the sample given, the chosen origin and the specified
@@ -17,7 +17,6 @@ def hist(sample):
     import numpy as np
     import math
     import matplotlib.pyplot as plt
-    %matplotlib inline
     import sys
     # Test sample
     try:
@@ -57,7 +56,7 @@ def hist(sample):
     j_max = int(math.ceil((max(sample)-o)/h))
     j_min = int(math.ceil((min(sample)-o)/h))
     bins = np.arange(j_min,j_max)*h+o
-    # Define histogram density estimate
+    # Define histogram density estimate and create plot
     y_values = np.zeros(len(bins)-1)
     for i in range(0,len(y_values)):
         for x in sample:

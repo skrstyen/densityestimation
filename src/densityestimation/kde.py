@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import sys
 def kde(sample):
     """Plots a kernel density estimator, kde, based on a user specified kernel and 
     bandwidth.
@@ -14,10 +17,7 @@ def kde(sample):
         A kde plot is returned based on the sample given, the type of kde desired and the 
         specified bandwidth.
     """
-    import numpy as np
-    import matplotlib.pyplot as plt
-    %matplotlib inline
-    import sys
+
     # Test sample
     try:
         sample = np.array(sample)
@@ -62,7 +62,7 @@ def kde(sample):
     x_min = min(sample)
     x_max = max(sample)
     x_values = np.linspace(x_min,x_max,100)
-    # Define kernel density estimate
+    # Define kernel density estimate and create plot
     y_values = np.empty(len(x_values))
     counter = 0
     for x in x_values:
